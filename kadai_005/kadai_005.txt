@@ -1,0 +1,12 @@
+cd C:\Development
+mkdir git_challenge
+cd git_challenge
+git init -b main
+"Hello, world!" | Set-Content hello_world.txt
+git add hello_world.txt
+git commit -m "hello_world.txtを追加"
+Add-Content hello_world.txt "こんにちは、世界！"
+git add hello_world.txt
+git commit -m "日本語訳を追記"
+git log --oneline
+
